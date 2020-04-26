@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+
+ <link rel="stylesheet" type="text/css" href="./Ailerons/Ailerons-Regular.otf">
+ <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+
+
+
+$(document).ready(function(){
+    animateIMG();
+    
+});
+ 
+
+function makeNewPosition(){
+    
+    // Get viewport dimensions (remove the dimension of the div)
+    var h = $(window).height() - 50;
+    var w = $(window).width() - 50;
+    
+    var nh = Math.floor(Math.random() * h);
+    var nw = Math.floor(Math.random() * w);
+    
+    return [nh,nw];    
+    
+}
+
+function animateIMG(){
+    var newq = makeNewPosition();
+    var oldq = $('img').offset();
+    var speed = calcSpeed([oldq.top, oldq.left], newq);
+    
+    $('img').animate({ top: newq[0], left: newq[1] }, speed, function(){
+      animateIMG();        
+    });
+    
+};
+
+function calcSpeed(prev, next) {
+    
+    var x = Math.abs(prev[1] - next[1]);
+    var y = Math.abs(prev[0] - next[0]);
+    var greatest = x > y ? x : y;
+    
+    var speedModifier = 0.1;// control the speed here 
+
+    var speed = Math.ceil(greatest/speedModifier);
+    return speed;
+
+}
+
+
+</script>
+
+<style type="text/css">
+  
+</style> 
+
+</head>
+
+
+<body>
+
+
+
+
+<div id="mySidenav" class="sidenav">
+  
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="Trybootstrap.html" class="hov">HOME         </a>
+  <a href="AboutBootstrap.html" class="hov">ABOUT      </a>
+  <a href="#" class="hov">PRODUCT    </a>
+  <a href="Service.html" class="hov">SERVICES    </a>
+  <a href="ContactUs.html" class="hov">CONTACT    </a>
+
+</div>
+
+<span class="openNav"><span style="font-size:30px;cursor:pointer;color:white;background-color:black;" onclick="openNav()">&#9776;</span></span>
+ 
+
+
+
+<div class="container-fluid" style="font-family:'Ailerons' ">
+
+ 
+  
+  <div class="row">
+
+    <div class="min-vh-100 min-vw-100 m-0 bgimg d-flex align-items-center justify-content-center">
+   
+    <img src="./images/JOY STICK BOTTOM.png" class="ani"> 
+
+    <div class="col-md-4 leftnav">
+      <span>
+
+        <div class="text-left d-flex flex-column align-items-left">
+                         
+ 
+                          <ul style="list-style-type: none;">
+
+                <li>  <a href="Trybootstrap.html" style="color:white; font-family:'Roboto'; text-decoration: none;"><div class="vl">&nbsp;&nbsp;&nbsp;<span class="hov"> HOME</span> </div></a>   </li>
+                
+                <li>  <a href="AboutBootstrap.html" style="color:white; font-family:'Roboto'; text-decoration: none;" ><div class="vl">&nbsp;&nbsp;&nbsp;  <span class="hov"> ABOUT</span> </div></a>    </li>
+                
+                <li>  <a href="#" style="color:white; font-family:'Roboto'; text-decoration: none;" ><div class="vl">&nbsp;&nbsp;&nbsp; <span class="hov"> PRODUCT </span> </div> 
+                </a>    </li>
+                
+                <li>  <a href="Service.html" style="color:white; font-family:'Roboto'; text-decoration: none;" ><div class="vl"> &nbsp;&nbsp;&nbsp;<span class="hov"> SERVICES </span> </div>
+                  </a>    </li>
+                
+                <li>  <a href="ContactUs.html" style="color:white; font-family:'Roboto';  text-decoration: none;" ><div class="vl1">&nbsp;&nbsp;&nbsp; <span class="hov"> CONTACT </span> </div>
+                </a>    </li>
+
+                
+              </ul> 
+      </div>
+    </span>
+    </div>
+
+ 
+    <div class="col-md-4 col-sm-12">
+      <div class="text-center d-flex flex-column align-items-center ">
+       <p class="lead slogan" style="color: white; font-size: 2vw;">LET'S BE CREATIVE</p>
+                <h1 style="font-size: 6vw;"><div style="color: orange"  
+        class="d-inline-block cn">IN</div><div class="d-inline-block cn" style="color:white;">SHADES</div></h1> 
+        <div class="fixed-bottom dis" style="margin-top: 5px;" >
+
+<a href="#" class="fa fa-twitter" ></a>
+<a href="#" class="fa fa-google" ></a>
+<a href="#" class="fa fa-youtube" ></a>
+<a href="https://www.linkedin.com/company/inshades" class="fa fa-linkedin" ></a>
+<a href="https://instagram.com/inshades_reality_?igshid=1uxr6bfpgg912" class="fa fa-instagram" ></a>
+
+      <a href="https://www.facebook.com/Inshades-103137771358234/" class="fa fa-facebook " ></a>
+</div>
+      </div>
+      
+    </div>
+
+
+    <div class="col-md-4 leftnav" >
+      <div class="fixed-top" style="margin-top: 30px;" >
+
+
+<a href="#" class="fa fa-youtube" style="float: right;"></a>
+<a href="#" class="fa fa-twitter" style="float: right;"></a>
+<a href="#" class="fa fa-google" style="float: right;"></a>
+<a href="https://www.linkedin.com/company/inshades" class="fa fa-linkedin" style="float: right;"></a>
+<a href="https://instagram.com/inshades_reality_?igshid=1uxr6bfpgg912" class="fa fa-instagram" style="float: right;"></a>
+      <a href="https://www.facebook.com/Inshades-103137771358234/" class="fa fa-facebook " style="float: right;"></a>
+</div>
+
+      <img src="./images/Layer1.png" style="width: 100%">
+    </div>
+
+  
+
+
+  </div>
+  </div>
+</div>
+
+</body>
+</html>

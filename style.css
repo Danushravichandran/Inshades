@@ -1,0 +1,179 @@
+@font-face {
+    font-family:'Ailerons';
+    src:url(./Ailerons/Ailerons-Regular.otf);
+}
+
+
+
+html{
+  height: 100vh;
+  width: 100vw;
+}
+
+.bgimg
+{
+	 background-image: url('./images/homebg.png');
+ background-size: 100% 100%!important;
+ background-repeat: no-repeat!important;
+
+}
+
+.slogan
+{
+	margin-bottom: -0.5rem!important;
+	letter-spacing: 1px;
+
+}
+
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.vl{
+  border-left: 6px solid orange;
+  height: 45px;
+}
+
+.vl1{
+border-left: 6px solid orange;
+  height: 30px;
+ 
+}
+
+
+
+.ani{
+
+	width:100px; 
+	height: 100px; 
+	position:fixed;
+}
+
+.fa-facebook {
+  padding-right: 30px;
+  color: white;
+}
+
+.fa-twitter {
+  padding-right:  30px;
+  color: white;
+}
+
+.fa-google {
+ padding-right:  30px;
+  color: white;
+}
+
+.fa-linkedin {
+  padding-right: 30px;
+  color: white;
+}
+
+.fa-youtube {
+ padding-right:  30px;
+  color: white;
+}
+
+.fa-instagram {
+ padding-right:  30px;
+  color: white;
+}
+
+
+
+.hov:hover{
+  background-color: orange;
+  color: black;
+}
+
+
+
+
+
+@media only screen and (max-width:425px) {    /*less than 425 works*/
+
+.slogan
+{
+	font-size: 6vw!important;
+	margin-left:-1.5rem!important; 
+	margin-bottom: -0.5rem!important;
+	letter-spacing: -3px;
+
+}
+
+.cn{
+
+font-size: 15vw;
+
+}
+
+.leftnav
+   {
+    display: none;
+   }
+
+   .vl
+   {
+    display: none;
+   }
+   
+   .vl1
+   {
+   	display: none;
+   }
+
+   .ani{
+   	width:80px; 
+	height: 80px; 
+	position:fixed;
+   }
+
+}
+
+
+
+	@media only screen and (min-width:426px) {   /*greater than 425 not works*/
+
+   .openNav
+   {
+   	display: none;
+   }
+   
+   .dis{
+   	display: none;
+   }
+}

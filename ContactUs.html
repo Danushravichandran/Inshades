@@ -7,6 +7,9 @@
 
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="keywords" content="web development project,web development service, app development project, app development service, 3d modeling project,3d modeling service">
+  <meta name="description" content="No.1 services for Web Development, App Development, 3D modeling">
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -20,6 +23,23 @@
  <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164809908-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-164809908-1');
+</script>
+
+
+
+
 
 
  <script>
@@ -48,7 +68,7 @@ function closeNav() {
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="index.html">HOME        </a>
   <a href="AboutBootstrap.html">ABOUT      </a>
-  <a href="#">PRODUCT    </a>
+  <a href="Product.html">PRODUCT    </a>
   <a href="Service.html">SERVICES    </a>
   <a href="ContactUs.html">CONTACT    </a>
 
@@ -101,11 +121,11 @@ function closeNav() {
 
 			<ul class="slogan " style="list-style-type: none;">
 
-                <li>  <a href="index.html" style="color:white; font-family:'Roboto'; text-decoration: none;"; ><div class="vl"> &nbsp;&nbsp;  <span class="hov">HOME</span>  </div></a>   </li>
+                <li style="padding-top:1rem; ">  <a href="index.html" style="color:white; font-family:'Roboto'; text-decoration: none;"; ><div class="vl"> &nbsp;&nbsp;  <span class="hov">HOME</span>  </div></a>   </li>
 
                 <li>  <a href="AboutBootstrap.html" style="color:white; font-family:'Roboto'; text-decoration: none;" ><div class="vl"> &nbsp;&nbsp;<span class="hov"> ABOUT</span> </div></a>    </li>
                 
-                <li>  <a href="#" style="color:white; font-family:'Roboto'; text-decoration: none;" ><div class="vl"> &nbsp;&nbsp;<span class="hov"> PRODUCT</span> </div> </a>    </li>
+                <li>  <a href="Product.html" style="color:white; font-family:'Roboto'; text-decoration: none;" ><div class="vl"> &nbsp;&nbsp;<span class="hov"> PRODUCT</span> </div> </a>    </li>
                 
                 <li>  <a href="Service.html" style="color:white; font-family:'Roboto'; text-decoration: none;" ><div class="vl"> &nbsp;&nbsp; <span class="hov"> SERVICES</span> </div></a>    </li>
                 
@@ -135,16 +155,15 @@ function closeNav() {
   <form role="form" action="https://formspree.io/realityinshades@gmail.com" method="POST">
     <div class="form-group">
       <label style="color: white">NAME</label>
-      <input type="text" class="form-control" id="email" placeholder="Enter Name" style="width:100% ">
+      <input type="text" class="form-control" id="email" name="Name" placeholder="Enter Name" style="width:100% ">
     </div>
     <div class="form-group">
       <label style="color: white">E-MAIL</label>
-      <input type="email" class="form-control" id="pwd" placeholder="Enter E-mail" style="width:100% ">
+      <input type="email" class="form-control" id="pwd" name="E-mail" placeholder="Enter E-mail" style="width:100% ">
     </div>
     <div class="form-group">
       <label style="color: white">COMMENTS</label>
-
-      <textarea class="form-control" id="comments" placeholder="Enter text here" style="width:100% " rows="4" cols="50" name="comment" form="usrform">
+      <textarea type="text" class="form-control" id="comments" placeholder="Enter text here" rows="5" name="Comment" style="width: 100%;">
 </textarea>
     </div>
     <button type="submit" class="btn submit"> Submit</button>
@@ -162,7 +181,7 @@ function closeNav() {
          <h4 class="d-inline-block" style="font-family: 'Ailerons'; color: white;">LET'S BE CREATIVE</h4>
         </h1>
 
-<p class="text-justify lead" style="color: white"> INSHADES care for the welfare of the service we provide and we care for the needs then and there meeting the expertise and support. We have the youngest people with youngest mind by making solution to the each and every problems. We take up on the technologies like, 3D Modelling, Virtual Reality (VR), Augumented Reality (AR), Game development both 3D and 2D, Web development and App development. Do catch us at the soical medias and submit a quote over here to make a collab with us. 
+<p class="text-justify lead" style="color: white"> INSHADES care for the welfare of the service we provide and we care for the needs then and there meeting the expertise and support. We have the youngest people with youngest mind by making solution to the each and every problems. We take up on the technologies like, 3D Modelling, Virtual Reality (VR), Augmented Reality (AR), Game development both 3D and 2D, Web development and App development. Do catch us at the soical medias and submit a quote over here to make a collab with us. 
 </p>
        
 	
@@ -175,12 +194,17 @@ function closeNav() {
 <footer>
       <center>  <div class="dis_social" style="margin-top: 5px;" >
 
-<a href="#" class="fa fa-twitter" ></a>
-<a href="#" class="fa fa-google" ></a>
+
+ 
+ <a href="https://www.facebook.com/Inshades-103137771358234/" class="fa fa-facebook " ></a>
+ <a href="https://instagram.com/inshades_reality_?igshid=1uxr6bfpgg912" class="fa fa-instagram" ></a>
+<a href="https://www.linkedin.com/company/inshades" class="fa fa-linkedin" ></a>
 <a href="#" class="fa fa-youtube" ></a>
-<a href="https://www.linkedin.com/company/inshades" class="fa fa-linkedin"></a>
-<a href="https://instagram.com/inshades_reality_?igshid=1uxr6bfpgg912" class="fa fa-instagram" ></a>
-      <a href="https://www.facebook.com/Inshades-103137771358234/" class="fa fa-facebook " ></a>
+<a href="#" class="fa fa-google" ></a>
+<a href="#" class="fa fa-twitter" ></a>
+
+
+    
 </div>
 </center>
 	</footer>
